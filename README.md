@@ -42,6 +42,8 @@ $ for spec in $(cat ./oas-specs.txt); do
 done
 ~~~
 
+## Bump to a newer OAS repo version
+
 If we want to "bump" to a newer version of the OAS repo...
 
 ~~~bash
