@@ -26,7 +26,7 @@ A pipeline needs to checkout the Git repository for the component AND submodules
 $ git clone https://github.com/robinhuiser/gsm-demo-api-portal.git 
 
 # You will notice the ./gsm-demo-oas-repo is empty...
-# Let's update and init the submodule with the commit ID present in the .gitsubmodule file
+# Let's update and init the submodule with the commit ID persisted in the repo
 $ git submodule update --init --recursive
 ~~~
 
