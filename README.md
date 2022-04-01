@@ -42,4 +42,24 @@ $ for spec in $(cat ./oas-specs.txt); do
 done
 ~~~
 
+If we want to "bump" to a newer version of the OAS repo...
+
+~~~bash
+# Fetch the latest and greatest OAS updates from the submodule
+# This assures we commit against main (for demo now)
+$ cd ./gsm-demo-oas-repo
+$ git pull origin main
+$ git checkout main
+$ cd ..
+
+## -- Now we have in the project's .git directory an updated 
+## -- Commit ID of the latest version
+
+# Now we push our component repo changes 
+# which contains a pointer to the just updated submodule repo
+$ git add ./gsm-demo-oas-repo
+$ git commit -m "Updated submodule gsm-demo-oas-repo"
+$ git push -u origin main
+~~~
+
 That's all folks!
